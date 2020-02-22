@@ -1,0 +1,9 @@
+<div class="wrap">
+  <h1>Users#index</h1>
+  <h1>ユーザー一覧</h1>
+  <% @users.each do |user| %>
+    <a href="/users/<%= user.id %>"><%= user.email %></a>
+    <hr>
+  <% end %>
+  <%= link_to "ホームへ戻る", posts_path %>
+</div>
